@@ -1,0 +1,60 @@
+
+.homepage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+    /* background-image: url('../images/Screenshot\ 2024-10-26\ 235644.png'); */
+    /* background-image: url('../Test_images/savetreessaveearth-s1.jpg'); */
+    background-image: url('../images/back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: 1;
+}
+
+.homepage h1,
+.homepage p,
+.button-container {
+    color:white;
+    position: relative;
+    z-index: 2;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.carousel-align{
+    padding-top: 2rem;
+}

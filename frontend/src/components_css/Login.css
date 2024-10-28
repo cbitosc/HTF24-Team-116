@@ -1,0 +1,88 @@
+/* Center the login form on the page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:  /* Adjusted opacity for more visibility */
+                url('../images/carousel/img1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.login p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.login input:focus {
+    border: 1px solid #3ddc85; /* Green border on focus */
+    outline: none; /* Remove outline */
+}
+
+.login button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2aa65a; /* Original green */
+    color: white; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+/* Change hover effect to remain within green theme */
+.login button:hover {
+    background-color: #15763a; /* Darker green on hover */
+}
+
+/* Add a subtle animation for button clicks */
+.login button:active {
+    transform: scale(0.98); /* Button click effect */
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .login h2 {
+        font-size: 24px; /* Smaller font size for heading */
+    }
+
+    .login button {
+        font-size: 16px; /* Smaller font size for button */
+    }
+}

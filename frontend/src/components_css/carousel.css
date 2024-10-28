@@ -1,0 +1,55 @@
+/* src/components_css/carousel.css */
+.carousel-container {
+    position: relative;
+    max-width: 600px; /* Smaller width */
+    height: 300px; /* Adjusted height for better proportions */
+    margin: auto;
+    overflow: hidden; /* Ensures only one slide is visible */
+    border-radius: 15px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Ensures carousel fills the container */
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%; /* Each slide takes full width */
+    height: 100%; /* Each slide fills the carousel's height */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Stretches to fit the carousel width */
+    height: 100%; /* Matches the height of the carousel */
+    object-fit: cover; /* Maintains aspect ratio without distortion */
+    object-position: center; /* Focuses on the center of the image */
+  }
+  
+  /* Navigation Dots */
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #4CAF50; /* Green for the active dot */
+  }
+  
