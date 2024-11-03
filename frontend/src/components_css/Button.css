@@ -1,0 +1,18 @@
+/* src/components/Button.css */
+
+.custom-button {
+    background-color: #3ddcb5; /* Base color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for background color and transform */
+    outline: none; /* Remove outline */
+}
+
+.custom-button:hover {
+    background-color: rgb(16, 155, 16); /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size */
+}

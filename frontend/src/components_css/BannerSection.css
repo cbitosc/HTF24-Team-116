@@ -1,0 +1,57 @@
+.banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #6db06d; /* Replace with the desired green color */
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/banner.jpg'); /* Replace with the background pattern image */
+    opacity: 0.6; /* Adjust opacity for a subtle effect */
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  .banner-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .banner-section p {
+    color:white;
+    font-size: 18px;
+    margin: 10px 0 20px;
+    z-index: 2;
+  }
+  
+  .learn-more-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .learn-more-button:hover {
+    background-color: white;
+    color: #6db06d; /* Match with the green background color */
+  }
+  

@@ -1,0 +1,107 @@
+/* src/components_css/SaplingSubmit.css */
+
+/* Full-page background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/tree-background.png'); /* Adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  /* Main container with centered content */
+  .sapling-submit-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Hero section styling */
+  .hero-section {
+    margin-bottom: 30px;
+  }
+  
+  /* Leaderboard section with tighter layout */
+  .leaderboard-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px; /* Cards are closer */
+    margin: 20px 0;
+  }
+  
+  .leaderboard-card {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Buttons for verification and submission */
+  .verify-submit {
+    margin: 20px 0;
+  }
+  
+  .verify-btn, .submit-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .verify-btn:hover, .submit-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Inspiring stories section */
+  .inspiring-stories {
+    margin-top: 30px;
+    text-align: left; /* Align text for better readability */
+  }
+  
+  .story-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  /* Title and text in black */
+  .story-card h3 {
+    color: black;
+    margin-bottom: 8px;
+  }
+  
+  .story-card p {
+    color: black;
+  }
+
+  .inspiring-stories h2 {
+    color: black;
+  }
+  
+  /* Motivation section */
+  .motivation-section {
+    margin-top: 20px;
+    font-style: italic;
+    color: #4caf50;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .leaderboard-row {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+  
